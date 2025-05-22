@@ -15,42 +15,67 @@
     <link rel="" type="" href="./css/style.css" />
     <title>Frontend Mentor | Newsletter</title>
   </head>
-  <body class="font-display">
+  <body class="font-display bg-gray-700">
     <!-- Sign-up form start -->
 
-    <h1 class="text-2xl font-bold py-5">Stay updated!</h1>
-    <p>Join 60,000+ product managers receiving monthly updates on:</p>
-    <img src="/" alt="validate icon" />
-    <img src="/" alt="validate icon" />
-    <img src="/" alt="validate icon" />
-    <p>Product discovery and building what matters</p>
-    <p>Measuring to ensure updates are a success</p>
-    <p>And much more!</p>
-    <div class="grid">
-      <label class="text-xs font-bold">Email address</label>
-      <input type="" name="" value="" placeholder="ash@loremcompany.com" />
-      <button
-        class="bg-orange-500 text-white p-3 rounded-sm hover:cursor-pointer"
-      >
-        Subscribe to monthly newsletter
-      </button>
+    <section class="grid grid-cols-4 items-center">
+      <!-- image container -->
+    </section>
+    <div class="form-container bg-white">
+      <div class="col-start-1 md:col-start-2 md:row-start-2">
+        <img src="./assets/images/illustration-sign-up-mobile.svg" alt="" />
+      </div>
+      <div class="col-start-1 md:row-start-2">
+        <h1 class="text-2xl font-bold py-3">Stay updated!</h1>
+        <p class="pb-5">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <div class="flex gap-4">
+          <img src="./assets/images/icon-list.svg" alt="validate icon" />
+          <p>Product discovery and building what matters</p>
+        </div>
+        <div class="flex gap-4">
+          <img src="./assets/images/icon-list.svg" alt="validate icon" />
+          <p>Measuring to ensure updates are a success</p>
+        </div>
+        <div class="flex gap-4">
+          <img src="./assets/images/icon-list.svg" alt="validate icon" />
+          <p>And much more!</p>
+        </div>
+        <div class="grid my-5">
+          <label class="text-xs font-bold mb-2">Email address</label>
+          <input
+            class="border-2 border-gray-300 mb-2 p-2 rounded-sm"
+            type=""
+            name=""
+            value=""
+            placeholder="ash@loremcompany.com"
+          />
+          <button
+            class="bg-orange-500 text-white p-3 rounded-sm hover:cursor-pointer"
+          >
+            Subscribe to monthly newsletter
+          </button>
+        </div>
+      </div>
     </div>
 
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
-
-    Thanks for subscribing! A confirmation email has been sent to
-    ash@loremcompany.com. Please open it and click the button inside to confirm
-    your subscription. Dismiss message
+    <div class="hidden">
+      Thanks for subscribing! A confirmation email has been sent to
+      ash@loremcompany.com. Please open it and click the button inside to
+      confirm your subscription. Dismiss message
+    </div>
 
     <!-- Success message end -->
 
-    <div class="attribution">
+    <div class="attribution text-center">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Sola Kabuta</a>.
     </div>
   </body>
 </html>
