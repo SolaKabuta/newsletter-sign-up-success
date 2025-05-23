@@ -1,81 +1,127 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="" type="" href="./css/style.css" />
-    <title>Frontend Mentor | Newsletter</title>
-  </head>
-  <body class="font-display bg-gray-700">
-    <!-- Sign-up form start -->
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="" type="" href="./css/style.css" />
+        <title>Frontend Mentor | Newsletter</title>
+        
+        <style type="text/tailwindcss">
+        /* Tailwind variables */
+        @theme {
+          --font-display: "Roboto", "sans-serif";
+          --color-background: hsl(234, 29%, 20%);
+          --color-foreground: hsl(235, 18%, 26%);
+          --breakpoint-xs: 30rem;
+        }
+        </style>
+        
+    </head>
+    <body class="font-display text-foreground bg-background">
+        <!-- Sign-up form start -->
 
-    <section class="grid grid-cols-4 items-center">
-      <!-- image container -->
-    </section>
-    <div class="form-container bg-white">
-      <div class="col-start-1 md:col-start-2 md:row-start-2">
-        <img src="./assets/images/illustration-sign-up-mobile.svg" alt="" />
-      </div>
-      <div class="col-start-1 md:row-start-2">
-        <h1 class="text-2xl font-bold py-3">Stay updated!</h1>
-        <p class="pb-5">
-          Join 60,000+ product managers receiving monthly updates on:
-        </p>
-        <div class="flex gap-4">
-          <img src="./assets/images/icon-list.svg" alt="validate icon" />
-          <p>Product discovery and building what matters</p>
+        <section class="grid h-[100svh] place-content-center">
+            <!-- Form Container -->
+            <div class="form-container bg-white grid grid-col-4 gap-10 md:p-8 rounded-3xl">
+                <!-- mobile image container -->
+                <div
+                    class="col-start-1 md:col-start-2 md:row-start-2 md:hidden"
+                >
+                    <img
+                        class="w-full"
+                        src="./assets/images/illustration-sign-up-mobile.svg"
+                        alt=""
+                    />
+                </div>
+                <!-- desktop image container -->
+                <div
+                    class="col-start-1 md:col-start-2 md:row-start-2 hidden md:block"
+                >
+                    <img
+                        src="./assets/images/illustration-sign-up-desktop.svg"
+                        alt=""
+                    />
+                </div>
+                <!-- Form Input Container -->
+                <div class="col-start-1 md:row-start-2 md:pt-20 p-6">
+                    <h1 class=" text-2xl font-bold pb-5 text-5xl md:text-6xl">
+                        Stay updated!
+                    </h1>
+                    <p class="pb-5">
+                        Join 60,000+ product managers receiving <br class="md:hidden"> monthly  <br class="xs:hidden"> updates
+                        on:
+                    </p>
+                    <div class="flex gap-4 mb-3">
+                        <img
+                            src="./assets/images/icon-list.svg"
+                            alt="validate icon"
+                        />
+                        <p>Product discovery and building what <br class="md:hidden"> matters</p>
+                    </div>
+                    <div class="flex gap-4 mb-3">
+                        <img
+                            src="./assets/images/icon-list.svg"
+                            alt="validate icon"
+                        />
+                        <p>Measuring to ensure updates are a <br class="md:hidden"> success</p>
+                    </div>
+                    <div class="flex gap-4 pb-5">
+                        <img
+                            src="./assets/images/icon-list.svg"
+                            alt="validate icon"
+                        />
+                        <p>And much more!</p>
+                    </div>
+                    <div class="grid my-5">
+                        <label class="text-xs font-bold mb-2"
+                            >Email address</label
+                        >
+                        <input
+                            class="border-[1.5px] border-gray-300 mb-4 p-4 px-6 rounded-lg"
+                            type=""
+                            name=""
+                            value=""
+                            placeholder="email@company.com"
+                        />
+                        <button
+                            id="btn"
+                            class="bg-background text-white p-4 rounded-lg hover:cursor-pointer"
+                        >
+                            Subscribe to monthly newsletter
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sign-up form end -->
+
+        <!-- Success message start -->
+        <div class="hidden">
+            Thanks for subscribing! A confirmation email has been sent to
+            ash@loremcompany.com. Please open it and click the button inside to
+            confirm your subscription. Dismiss message
         </div>
-        <div class="flex gap-4">
-          <img src="./assets/images/icon-list.svg" alt="validate icon" />
-          <p>Measuring to ensure updates are a success</p>
+
+        <!-- Success message end -->
+
+        <div class="attribution text-center">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by <a href="#">Sola Kabuta</a>.
         </div>
-        <div class="flex gap-4">
-          <img src="./assets/images/icon-list.svg" alt="validate icon" />
-          <p>And much more!</p>
-        </div>
-        <div class="grid my-5">
-          <label class="text-xs font-bold mb-2">Email address</label>
-          <input
-            class="border-2 border-gray-300 mb-2 p-2 rounded-sm"
-            type=""
-            name=""
-            value=""
-            placeholder="ash@loremcompany.com"
-          />
-          <button
-            class="bg-orange-500 text-white p-3 rounded-sm hover:cursor-pointer"
-          >
-            Subscribe to monthly newsletter
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Sign-up form end -->
-
-    <!-- Success message start -->
-    <div class="hidden">
-      Thanks for subscribing! A confirmation email has been sent to
-      ash@loremcompany.com. Please open it and click the button inside to
-      confirm your subscription. Dismiss message
-    </div>
-
-    <!-- Success message end -->
-
-    <div class="attribution text-center">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Sola Kabuta</a>.
-    </div>
-  </body>
+        <script src="app.js"></script>
+    </body>
 </html>
