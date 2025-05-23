@@ -18,7 +18,7 @@ function verifyEmail(email) {
     return emailRegex.test(email);
 }
 
-// CLICK EVENT
+// Click Event
 // Then we add the event listener on the first button
 form.addEventListener("submit", function(e) {
   e.preventDefault()
@@ -31,7 +31,6 @@ form.addEventListener("submit", function(e) {
   } 
   
   if (verifyEmail(mail)) {
-   
    // We create the error message
    const error = document.createElement('p');
    error.classList.add('text-red', 'font-bold', 'text-xs');
