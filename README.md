@@ -40,8 +40,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/SolaKabuta/newsletter-sign-up-success)
-- Live Site URL: [Add live site URL here](https://newsletter-sign-up-success-henna.vercel.app/)
+- Solution URL: [Github](https://github.com/SolaKabuta/newsletter-sign-up-success)
+- Live Site URL: [Live Site](https://newsletter-sign-up-success-henna.vercel.app/)
 
 ### Built with
 
