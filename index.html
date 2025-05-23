@@ -18,7 +18,7 @@
         <style type="text/tailwindcss">
         /* Tailwind variables */
         @theme {
-          --font-display: "Roboto", "sans-serif";
+          --font-rob: "Roboto", "sans-serif";
           --color-background: hsl(234, 29%, 20%);
           --color-foreground: hsl(235, 18%, 26%);
           --color-gradient1: hsl(346, 100%, 66%);
@@ -29,7 +29,7 @@
         </style>
         
     </head>
-    <body class="font-display text-foreground bg-background">
+    <body class="font-rob text-foreground bg-background">
         
         <!-- Sign-up form start -->
         <form id="form" class="grid h-[100svh] place-content-center">
@@ -105,6 +105,7 @@
                         <button
                             id="subscribe"
                             class="bg-background text-white font-semibold p-4 rounded-lg transition duration-300 ease-in-out hover:cursor-pointer  hover:bg-linear-to-r hover:from-gradient1 hover:to-gradient2 hover:shadow-lg"
+                            type="submit"
                         >
                             Subscribe to monthly newsletter
                         </button>
