@@ -40,7 +40,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://github.com/SolaKabuta/newsletter-sign-up-success)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ### Built with
@@ -70,7 +70,6 @@ if (!verifyEmail(email)) {
   mailLabel.appendChild(error);
 
   // Add class to the error message
-  // If anyone to do that part the correct way I'll be glad to have some feedback
   mailInput.classList.remove('border-gray-400/90');
   mailInput.classList.add('bg-red-200', 'text-red-600', 'border-red-500');
   mailInput.value.textContent = " ";
