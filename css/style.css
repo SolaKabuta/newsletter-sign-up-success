@@ -1,6 +1,21 @@
 /* Google font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+  --font-display: "Roboto", "sans-serif";
+  --color-background: hsl(234, 29%, 20%);
+  --color-foreground: hsl(235, 18%, 26%);
+  --color-gradient1: hsl(346, 100%, 66%);
+  --color-gradient2: hsl(15, 100%, 62%);
+  --color-red: hsl(4, 100%, 67%);
+  --breakpoint-xs: 30rem;
+}
 
 
 /* Footer style .attribution { */

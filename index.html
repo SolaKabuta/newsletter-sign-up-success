@@ -89,9 +89,11 @@
                         <p>And much more!</p>
                     </div>
                     <div class="grid my-5">
-                        <label for="mail-input" class="text-xs font-bold mb-2"
-                            >Email address</label
-                        >
+                        <div id="mail-label" class="flex justify-between">
+                            <label  for="mail-input" class="text-xs font-bold mb-2"
+                                >Email address</label
+                            >
+                        </div>
                         <input
                             id="mail-input"
                             class="border-[1.5px] border-gray-400/90 mb-4 p-4 px-6 rounded-lg"
@@ -113,8 +115,8 @@
         <!-- Sign-up form end -->
 
         <!-- Success message start -->
-        <section class="grid h-[100svh] place-content-center hidden">
-            <div id="success-message" class="bg-white md:rounded-3xl p-6 h-[100svh] md:h-[50vh]">
+        <section id="success-message" class="grid h-[100svh] place-content-center hidden">
+            <div class="bg-white md:rounded-3xl p-6 h-[100svh] md:h-[50vh]">
                 <img src="./assets/images//icon-success.svg" alt="success-icon" class="pb-10 pt-32 md:pb-5 md:pt-2"/>
                 <h1 class="text-4xl font-bold pb-5">Thanks for <br> subscribing!</h1>  
                 <p class="pb-44 md:pb-10">
