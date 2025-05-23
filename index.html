@@ -27,11 +27,13 @@
         
     </head>
     <body class="font-display text-foreground bg-background">
+        
         <!-- Sign-up form start -->
-
-        <section class="grid h-[100svh] place-content-center">
+        <form id="form" class="grid h-[100svh] place-content-center">
+            
             <!-- Form Container -->
             <div class="form-container bg-white grid grid-col-4 gap-10 md:p-8 rounded-3xl">
+                
                 <!-- mobile image container -->
                 <div
                     class="col-start-1 md:col-start-2 md:row-start-2 md:hidden"
@@ -42,6 +44,7 @@
                         alt=""
                     />
                 </div>
+                
                 <!-- desktop image container -->
                 <div
                     class="col-start-1 md:col-start-2 md:row-start-2 hidden md:block"
@@ -51,13 +54,14 @@
                         alt=""
                     />
                 </div>
+                
                 <!-- Form Input Container -->
                 <div class="col-start-1 md:row-start-2 md:pt-20 p-6">
-                    <h1 class=" text-2xl font-bold pb-5 text-5xl md:text-6xl">
+                    <h1 class=" text-2xl font-[600] md:font-bold pb-5 text-5xl md:text-6xl">
                         Stay updated!
                     </h1>
                     <p class="pb-5">
-                        Join 60,000+ product managers receiving <br class="md:hidden"> monthly  <br class="xs:hidden"> updates
+                        Join 60,000+ product managers receiving <br class="md:hidden"> monthly  <br class="xs:hidden md:block"> updates
                         on:
                     </p>
                     <div class="flex gap-4 mb-3">
@@ -94,27 +98,34 @@
                         />
                         <button
                             id="btn"
-                            class="bg-background text-white p-4 rounded-lg hover:cursor-pointer"
+                            class="bg-background text-white font-semibold p-4 rounded-lg transition duration-300 ease-in-out hover:cursor-pointer  hover:bg-linear-to-r hover:from-red-600 hover:to-orange-300 hover:shadow-lg"
                         >
                             Subscribe to monthly newsletter
                         </button>
                     </div>
                 </div>
             </div>
-        </section>
-
+        </form>
         <!-- Sign-up form end -->
 
         <!-- Success message start -->
-        <div class="hidden">
-            Thanks for subscribing! A confirmation email has been sent to
-            ash@loremcompany.com. Please open it and click the button inside to
-            confirm your subscription. Dismiss message
-        </div>
-
+        <section class="grid h-[100svh] place-content-center">
+            <div id="success-message" class="bg-white rounded-lg p-8 h-[70svh] md:h-[42vh]">
+                <img src="./assets/images//icon-success.svg" alt="success-icon" class="pb-10 pt-32 md:pb-5 md:pt-2"/>
+                <h1 class="text-4xl font-bold pb-5">Thanks for <br> subscribing!</h1>  
+                <p class="pb-44 md:pb-5">
+                    A confirmation email has been sent to <br>
+                    <span class="font-semibold">ash@loremcompany.com</span>. Please open it and <br> click the button inside to
+                    confirm your <br> subscription.
+                </p>
+                <button class="text-white bg-background rounded-md p-4 w-full transition duration-300 ease-in-out md:hover:cursor-pointer md:hover:bg-linear-to-r md:hover:from-red-600 md:hover:to-orange-300 md:hover:shadow-lg">
+                    Dismiss message
+                </button>
+            </div>
+        </section>
         <!-- Success message end -->
-
-        <div class="attribution text-center">
+        
+        <div class="attribution text-center text-white [&_a]:text-blue-500 pt-44 pb-2">
             Challenge by
             <a
                 href="https://www.frontendmentor.io?ref=challenge"
