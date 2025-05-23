@@ -1,4 +1,3 @@
 ## TODO 
 
-- Add JS logic to display error message
-- Style layout for success message
+- Add JS logic to display error message and according panels
